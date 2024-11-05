@@ -190,6 +190,7 @@
   position: relative;
   display: block;
   z-index: 91;
+  margin: 0 200px;
 }
 
 .main-menu__inner {
@@ -200,6 +201,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--felna-primary);
+  padding: 21px 0;
 }
 
 .main-menu-box {
@@ -210,10 +212,47 @@
   align-items: center;
 }
 
-#mobile-nav__toggler {
-  font-size: 100px;
+#mobile-nav__toggler i {
+  font-size: 20px;
   color: var(--felna-base);
   cursor: pointer;
+  transition: var(--transition);
+  display: none;
+}
+
+#mobile-nav__toggler i:hover {
+  color: var(--felna-black);
+}
+
+.main-menu-box__search-box {
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.main-menu__search i {
+  font-size: 24px;
+  color: var(--felna-black);
+  transition: var(--transition);
+}
+
+.main-menu__search i:hover {
+  color: var(--felna-base);
+}
+
+.main-menu__btn {
+  font-size: 14px;
+  color: var(--felna-white);
+  background-color: var(--felna-black);
+  padding: 28.5px 50px;
+  transition: var(--transition);
+  font-weight: 700;
+}
+
+.main-menu__btn:hover {
+  background-color: var(--felna-base);
 }
 
 /* bottom nav bar ends here */
