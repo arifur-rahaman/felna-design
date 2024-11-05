@@ -67,8 +67,8 @@
 }
 
 #felna-logo {
-  width: 80px;
-  height: 70px;
+  width: 140px;
+  height: 120px;
 }
 
 .main-header__top-right {
@@ -78,14 +78,14 @@
   align-items: center;
 }
 
-.main-header__social {
+.main-header__icon {
   position: relative;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
 }
 
-.main-header__social a {
+.main-header__icon a {
   position: relative;
   height: 43px;
   width: 43px;
@@ -106,10 +106,38 @@
   margin-left: 10px;
 }
 
-.main-header__social a:hover {
+.main-header__icon a:hover {
   background-color: var(--felna-base);
   color: var(--felna-white);
 }
+
+/* .center-burst::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: var(--transition);
+  z-index: 0;
+}
+
+.center-burst:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: var(--felna-base);
+  color: var(--felna-white);
+}
+
+.center-burst:hover {
+  color: white;
+}
+
+.center-burst {
+  position: relative;
+  z-index: 1;
+} */
 
 .main-header__contact-box {
   margin-left: 80px;
@@ -158,5 +186,34 @@
 /* top nav bar ends here */
 
 /* bottom nav bar starts here */
+.main-menu {
+  position: relative;
+  display: block;
+  z-index: 91;
+}
+
+.main-menu__inner {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--felna-primary);
+}
+
+.main-menu-box {
+  padding-left: 40px;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#mobile-nav__toggler {
+  font-size: 100px;
+  color: var(--felna-base);
+  cursor: pointer;
+}
 
 /* bottom nav bar ends here */
